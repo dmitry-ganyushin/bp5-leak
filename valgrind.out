@@ -1,0 +1,618 @@
+==16762== Memcheck, a memory error detector
+==16762== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==16762== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==16762== Command: ./localArray_read_bp5
+==16762== 
+---------------- BP5 engine parameters --------------
+  OpenTimeoutSecs = -1   default = -1
+  BeginStepPollingFrequencySecs = 1   default = 1
+  StreamReader = 0   default = 0
+  BurstBufferDrain = 1   default = 1
+  BurstBufferPath =    default = 
+  NodeLocal = 0   default = 0
+  verbose = 4   default = 0
+  CollectiveMetadata = 1   default = 1
+  NumAggregators = 0   default = 0
+  AggregatorRatio = 0   default = 0
+  NumSubFiles = 0   default = 0
+  StripeSize = 4096   default = 4096
+  DirectIO = 0   default = 0
+  DirectIOAlignOffset = 512   default = 512
+  DirectIOAlignBuffer = 0   default = 0
+  AggregationType = 2   default = 2
+  AsyncOpen = 1   default = 1
+  AsyncWrite = 0   default = 0
+  GrowthFactor = 1.05   default = 1.05
+  InitialBufferSize = 16384   default = 16384
+  MinDeferredSize = 4194304   default = 4194304
+  BufferChunkSize = 134217728   default = 134217728
+  MaxShmSize = 4294762496   default = 4294762496
+  BufferVType = 1   default = 1
+  AppendAfterSteps = 2147483647   default = 2147483647
+  SelectSteps =    default = 
+  ReaderShortCircuitReads = 0   default = 0
+  StatsLevel = 1   default = 1
+  StatsBlockSize = 1125899906842624   default = 1125899906842624
+  Threads = 0   default = 0
+  MaxOpenFilesAtOnce = 4294967295   default = 4294967295
+-----------------------------------------------------
+Process step 0: 
+    v0 has 500 blocks in step 0
+done in 0.138194
+done in 0.004999
+done in 0.004140
+done in 0.004161
+done in 0.004127
+done in 0.004167
+done in 0.004139
+done in 0.004130
+done in 0.004132
+done in 0.004134
+done in 0.004117
+done in 0.004147
+done in 0.004168
+done in 0.004194
+done in 0.004160
+done in 0.004093
+done in 0.004171
+done in 0.004123
+done in 0.004113
+done in 0.004124
+done in 0.004138
+done in 0.004114
+done in 0.004134
+done in 0.004107
+done in 0.004141
+done in 0.004207
+done in 0.004144
+done in 0.004119
+done in 0.004109
+done in 0.004144
+done in 0.004169
+done in 0.004125
+done in 0.004129
+done in 0.004169
+done in 0.004138
+done in 0.004149
+done in 0.004173
+done in 0.004153
+done in 0.004135
+done in 0.004121
+done in 0.004119
+done in 0.004127
+done in 0.004142
+done in 0.004151
+done in 0.004215
+done in 0.004196
+done in 0.004243
+done in 0.004122
+done in 0.004127
+done in 0.004160
+done in 0.004184
+done in 0.004161
+done in 0.004129
+done in 0.004182
+done in 0.004108
+done in 0.004182
+done in 0.004132
+done in 0.004133
+done in 0.004237
+done in 0.004248
+done in 0.004105
+done in 0.004134
+done in 0.004161
+done in 0.004101
+done in 0.004147
+done in 0.004104
+done in 0.004222
+done in 0.004107
+done in 0.004151
+done in 0.004135
+done in 0.004152
+done in 0.004108
+done in 0.004190
+done in 0.004127
+done in 0.004150
+done in 0.004220
+done in 0.004146
+done in 0.004108
+done in 0.004177
+done in 0.004095
+done in 0.004147
+done in 0.004137
+done in 0.004119
+done in 0.004119
+done in 0.004145
+done in 0.004165
+done in 0.004119
+done in 0.008116
+done in 0.004128
+done in 0.004166
+done in 0.004138
+done in 0.004127
+done in 0.004133
+done in 0.004109
+done in 0.004157
+done in 0.004108
+done in 0.004128
+done in 0.004157
+done in 0.004187
+done in 0.004128
+done in 0.004503
+done in 0.004168
+done in 0.004154
+done in 0.004139
+done in 0.004128
+done in 0.004178
+done in 0.004142
+done in 0.004111
+done in 0.004116
+done in 0.004124
+done in 0.004127
+done in 0.004127
+done in 0.004144
+done in 0.004138
+done in 0.004128
+done in 0.004130
+done in 0.004090
+done in 0.004137
+done in 0.004158
+done in 0.004141
+done in 0.004136
+done in 0.004115
+done in 0.004093
+done in 0.004147
+done in 0.004098
+done in 0.004125
+done in 0.004092
+done in 0.004130
+done in 0.004114
+done in 0.004133
+done in 0.004163
+done in 0.004107
+done in 0.004149
+done in 0.004141
+done in 0.004128
+done in 0.004131
+done in 0.004182
+done in 0.004158
+done in 0.004173
+done in 0.004155
+done in 0.004137
+done in 0.004153
+done in 0.004150
+done in 0.004099
+done in 0.004187
+done in 0.004125
+done in 0.004115
+done in 0.004119
+done in 0.004189
+done in 0.004159
+done in 0.004186
+done in 0.004150
+done in 0.004161
+done in 0.004167
+done in 0.004085
+done in 0.004146
+done in 0.004125
+done in 0.004150
+done in 0.004175
+done in 0.004163
+done in 0.004109
+done in 0.004161
+done in 0.004200
+done in 0.004153
+done in 0.004141
+done in 0.004146
+done in 0.004171
+done in 0.004152
+done in 0.004138
+done in 0.004119
+done in 0.004282
+done in 0.004173
+done in 0.004168
+done in 0.004146
+done in 0.004181
+done in 0.004147
+done in 0.004151
+done in 0.004174
+done in 0.004173
+done in 0.004118
+done in 0.004183
+done in 0.004145
+done in 0.004123
+done in 0.004119
+done in 0.004138
+done in 0.004118
+done in 0.004209
+done in 0.004195
+done in 0.004139
+done in 0.004164
+done in 0.004124
+done in 0.004163
+done in 0.004162
+done in 0.004132
+done in 0.004139
+done in 0.004145
+done in 0.004128
+done in 0.004121
+done in 0.004135
+done in 0.004162
+done in 0.004240
+done in 0.004229
+done in 0.004199
+done in 0.004258
+done in 0.004166
+done in 0.004617
+done in 0.004626
+done in 0.004192
+done in 0.004147
+done in 0.004112
+done in 0.004193
+done in 0.004147
+done in 0.004117
+done in 0.004140
+done in 0.004143
+done in 0.004105
+done in 0.004167
+done in 0.004160
+done in 0.004146
+done in 0.004207
+done in 0.004136
+done in 0.004126
+done in 0.004122
+done in 0.004134
+done in 0.004135
+done in 0.004181
+done in 0.004117
+done in 0.004147
+done in 0.004156
+done in 0.004108
+done in 0.004127
+done in 0.004179
+done in 0.004154
+done in 0.004143
+done in 0.004149
+done in 0.004162
+done in 0.004102
+done in 0.004116
+done in 0.004140
+done in 0.004121
+done in 0.004131
+done in 0.004203
+done in 0.004123
+done in 0.004130
+done in 0.004291
+done in 0.008625
+done in 0.004187
+done in 0.004176
+done in 0.004129
+done in 0.004224
+done in 0.004183
+done in 0.004182
+done in 0.004120
+done in 0.004221
+done in 0.004127
+done in 0.004146
+done in 0.004131
+done in 0.004111
+done in 0.004153
+done in 0.004113
+done in 0.004145
+done in 0.004105
+done in 0.004588
+done in 0.004236
+done in 0.004268
+done in 0.004192
+done in 0.004173
+done in 0.004146
+done in 0.004156
+done in 0.004151
+done in 0.004125
+done in 0.004169
+done in 0.004149
+done in 0.004132
+done in 0.004104
+done in 0.004171
+done in 0.004170
+done in 0.004169
+done in 0.004125
+done in 0.004114
+done in 0.004127
+done in 0.004182
+done in 0.004151
+done in 0.004190
+done in 0.004136
+done in 0.004119
+done in 0.004150
+done in 0.004106
+done in 0.004155
+done in 0.004141
+done in 0.004113
+done in 0.004096
+done in 0.004119
+done in 0.004098
+done in 0.004174
+done in 0.004141
+done in 0.004129
+done in 0.004127
+done in 0.004148
+done in 0.004115
+done in 0.004162
+done in 0.004090
+done in 0.004142
+done in 0.004140
+done in 0.004130
+done in 0.004116
+done in 0.004183
+done in 0.004111
+done in 0.004127
+done in 0.004183
+done in 0.004105
+done in 0.004182
+done in 0.004119
+done in 0.004192
+done in 0.004140
+done in 0.004136
+done in 0.004156
+done in 0.004230
+done in 0.004106
+done in 0.004155
+done in 0.004140
+done in 0.004169
+done in 0.004132
+done in 0.004097
+done in 0.004125
+done in 0.004152
+done in 0.004145
+done in 0.004148
+done in 0.004123
+done in 0.004111
+done in 0.004142
+done in 0.004134
+done in 0.004155
+done in 0.004210
+done in 0.004162
+done in 0.004124
+done in 0.004209
+done in 0.004115
+done in 0.004141
+done in 0.004122
+done in 0.004200
+done in 0.004182
+done in 0.004164
+done in 0.004159
+done in 0.004186
+done in 0.004161
+done in 0.004156
+done in 0.004242
+done in 0.004106
+done in 0.004093
+done in 0.004139
+done in 0.004119
+done in 0.004136
+done in 0.004203
+done in 0.004144
+done in 0.004116
+done in 0.004146
+done in 0.004089
+done in 0.004125
+done in 0.004186
+done in 0.004120
+done in 0.004164
+done in 0.004126
+done in 0.004118
+done in 0.004113
+done in 0.004088
+done in 0.004185
+done in 0.004222
+done in 0.004094
+done in 0.004128
+done in 0.004134
+done in 0.004104
+done in 0.004132
+done in 0.004105
+done in 0.004104
+done in 0.004139
+done in 0.004091
+done in 0.004263
+done in 0.004127
+done in 0.004153
+done in 0.004142
+done in 0.004113
+done in 0.004102
+done in 0.004142
+done in 0.004142
+done in 0.004146
+done in 0.004132
+done in 0.004124
+done in 0.004143
+done in 0.004171
+done in 0.004178
+done in 0.004145
+done in 0.004126
+done in 0.004122
+done in 0.004127
+done in 0.004142
+done in 0.004116
+done in 0.004178
+done in 0.004103
+done in 0.004096
+done in 0.004202
+done in 0.004118
+done in 0.004161
+done in 0.004140
+done in 0.004123
+done in 0.004131
+done in 0.004104
+done in 0.004113
+done in 0.008145
+done in 0.004181
+done in 0.004113
+done in 0.004138
+done in 0.004137
+done in 0.004111
+done in 0.004125
+done in 0.004105
+done in 0.004135
+done in 0.004177
+done in 0.004120
+done in 0.004124
+done in 0.004144
+done in 0.004115
+done in 0.004158
+done in 0.004104
+done in 0.004122
+done in 0.004139
+done in 0.004117
+done in 0.004128
+done in 0.004126
+done in 0.004103
+done in 0.004107
+done in 0.004142
+done in 0.004074
+done in 0.004145
+done in 0.004161
+done in 0.004147
+done in 0.004099
+done in 0.004109
+done in 0.004131
+done in 0.004169
+done in 0.004092
+done in 0.004153
+done in 0.004122
+done in 0.004131
+done in 0.004110
+done in 0.004151
+done in 0.004193
+done in 0.004145
+done in 0.004146
+done in 0.004148
+done in 0.004216
+done in 0.004176
+done in 0.004231
+done in 0.004116
+done in 0.004184
+done in 0.004127
+done in 0.004200
+done in 0.004148
+done in 0.004203
+done in 0.004120
+done in 0.004140
+done in 0.004111
+done in 0.004113
+done in 0.004094
+done in 0.004146
+done in 0.004109
+done in 0.004095
+done in 0.004132
+done in 0.004100
+done in 0.004118
+done in 0.004145
+done in 0.004110
+done in 0.004143
+done in 0.004126
+done in 0.004110
+done in 0.004278
+done in 0.004102
+done in 0.004119
+done in 0.004137
+done in 0.004123
+done in 0.004104
+done in 0.004114
+done in 0.004119
+done in 0.004146
+done in 0.004144
+done in 0.004149
+done in 0.004289
+done in 0.004223
+done in 0.004205
+done in 0.004138
+done in 0.004268
+done in 0.004242
+done in 0.004177
+done in 0.004199
+done in 0.004180
+done in 0.004192
+done in 0.004123
+done in 0.004117
+done in 0.004116
+done in 0.004148
+Process step 1: 
+Process step 2: 
+Process step 3: 
+Process step 4: 
+==16762== 
+==16762== HEAP SUMMARY:
+==16762==     in use at exit: 20,028,160 bytes in 1,015 blocks
+==16762==   total heap usage: 10,603 allocs, 9,588 frees, 20,624,241 bytes allocated
+==16762== 
+==16762== 200,000 bytes in 5 blocks are possibly lost in loss record 16 of 18
+==16762==    at 0x4C3252A: operator new(unsigned long) (vg_replace_malloc.c:342)
+==16762==    by 0x5108C4D: __gnu_cxx::new_allocator<adios2::MinBlockInfo>::allocate(unsigned long, void const*) (new_allocator.h:115)
+==16762==    by 0x5100769: std::allocator_traits<std::allocator<adios2::MinBlockInfo> >::allocate(std::allocator<adios2::MinBlockInfo>&, unsigned long) (alloc_traits.h:460)
+==16762==    by 0x50FB63B: std::_Vector_base<adios2::MinBlockInfo, std::allocator<adios2::MinBlockInfo> >::_M_allocate(unsigned long) (stl_vector.h:346)
+==16762==    by 0x6957E58: std::vector<adios2::MinBlockInfo, std::allocator<adios2::MinBlockInfo> >::reserve(unsigned long) (vector.tcc:78)
+==16762==    by 0x69555AD: adios2::format::BP5Deserializer::MinBlocksInfo(adios2::core::VariableBase const&, unsigned long) (BP5Deserializer.cpp:1615)
+==16762==    by 0x690FFDF: adios2::core::engine::BP5Reader::MinBlocksInfo(adios2::core::VariableBase const&, unsigned long) const (BP5Reader.cpp:670)
+==16762==    by 0x659E88A: adios2::core::Variable<signed char>::DoCount() const (Variable.tcc:44)
+==16762==    by 0x659F3C2: adios2::core::Variable<signed char>::DoSelectionSize() const (Variable.tcc:97)
+==16762==    by 0x6592F99: adios2::core::Variable<signed char>::SelectionSize() const (Variable.cpp:106)
+==16762==    by 0x64DD802: void adios2::core::Engine::Get<signed char>(adios2::core::Variable<signed char>&, std::vector<signed char, std::allocator<signed char> >&, adios2::Mode) (Engine.tcc:136)
+==16762==    by 0x5064ECB: void adios2::Engine::Get<signed char>(adios2::Variable<signed char>, std::vector<signed char, std::allocator<signed char> >&, adios2::Mode) (Engine.tcc:186)
+==16762== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: possible
+   fun:_Znwm
+   fun:_ZN9__gnu_cxx13new_allocatorIN6adios212MinBlockInfoEE8allocateEmPKv
+   fun:_ZNSt16allocator_traitsISaIN6adios212MinBlockInfoEEE8allocateERS2_m
+   fun:_ZNSt12_Vector_baseIN6adios212MinBlockInfoESaIS1_EE11_M_allocateEm
+   fun:_ZNSt6vectorIN6adios212MinBlockInfoESaIS1_EE7reserveEm
+   fun:_ZN6adios26format15BP5Deserializer13MinBlocksInfoERKNS_4core12VariableBaseEm
+   fun:_ZNK6adios24core6engine9BP5Reader13MinBlocksInfoERKNS0_12VariableBaseEm
+   fun:_ZNK6adios24core8VariableIaE7DoCountEv
+   fun:_ZNK6adios24core8VariableIaE15DoSelectionSizeEv
+   fun:_ZNK6adios24core8VariableIaE13SelectionSizeEv
+   fun:_ZN6adios24core6Engine3GetIaEEvRNS0_8VariableIT_EERSt6vectorIS4_SaIS4_EENS_4ModeE
+   fun:_ZN6adios26Engine3GetIaEEvNS_8VariableIT_EERSt6vectorIS3_SaIS3_EENS_4ModeE
+}
+==16762== 19,828,000 (28,000 direct, 19,800,000 indirect) bytes in 500 blocks are definitely lost in loss record 18 of 18
+==16762==    at 0x4C3252A: operator new(unsigned long) (vg_replace_malloc.c:342)
+==16762==    by 0x6955223: adios2::format::BP5Deserializer::MinBlocksInfo(adios2::core::VariableBase const&, unsigned long) (BP5Deserializer.cpp:1543)
+==16762==    by 0x690FFDF: adios2::core::engine::BP5Reader::MinBlocksInfo(adios2::core::VariableBase const&, unsigned long) const (BP5Reader.cpp:670)
+==16762==    by 0x659E88A: adios2::core::Variable<signed char>::DoCount() const (Variable.tcc:44)
+==16762==    by 0x659F3C2: adios2::core::Variable<signed char>::DoSelectionSize() const (Variable.tcc:97)
+==16762==    by 0x6592F99: adios2::core::Variable<signed char>::SelectionSize() const (Variable.cpp:106)
+==16762==    by 0x64DD802: void adios2::core::Engine::Get<signed char>(adios2::core::Variable<signed char>&, std::vector<signed char, std::allocator<signed char> >&, adios2::Mode) (Engine.tcc:136)
+==16762==    by 0x5064ECB: void adios2::Engine::Get<signed char>(adios2::Variable<signed char>, std::vector<signed char, std::allocator<signed char> >&, adios2::Mode) (Engine.tcc:186)
+==16762==    by 0x111193: ReadVariable(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, adios2::IO&, adios2::Engine&, unsigned long) (localArray_read_bp5.cpp:34)
+==16762==    by 0x1115EB: main (localArray_read_bp5.cpp:81)
+==16762== 
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   match-leak-kinds: definite
+   fun:_Znwm
+   fun:_ZN6adios26format15BP5Deserializer13MinBlocksInfoERKNS_4core12VariableBaseEm
+   fun:_ZNK6adios24core6engine9BP5Reader13MinBlocksInfoERKNS0_12VariableBaseEm
+   fun:_ZNK6adios24core8VariableIaE7DoCountEv
+   fun:_ZNK6adios24core8VariableIaE15DoSelectionSizeEv
+   fun:_ZNK6adios24core8VariableIaE13SelectionSizeEv
+   fun:_ZN6adios24core6Engine3GetIaEEvRNS0_8VariableIT_EERSt6vectorIS4_SaIS4_EENS_4ModeE
+   fun:_ZN6adios26Engine3GetIaEEvNS_8VariableIT_EERSt6vectorIS3_SaIS3_EENS_4ModeE
+   fun:_Z12ReadVariableRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERN6adios22IOERNS7_6EngineEm
+   fun:main
+}
+==16762== LEAK SUMMARY:
+==16762==    definitely lost: 28,000 bytes in 500 blocks
+==16762==    indirectly lost: 19,800,000 bytes in 495 blocks
+==16762==      possibly lost: 200,000 bytes in 5 blocks
+==16762==    still reachable: 160 bytes in 15 blocks
+==16762==         suppressed: 0 bytes in 0 blocks
+==16762== Reachable blocks (those to which a pointer was found) are not shown.
+==16762== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==16762== 
+==16762== For lists of detected and suppressed errors, rerun with: -s
+==16762== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
